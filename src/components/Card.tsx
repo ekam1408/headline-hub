@@ -24,7 +24,11 @@ const Card = (props: CardProps) => {
         <Text style={styles.titleText} numberOfLines={3}>
           {title}
         </Text>
-        <Image source={{uri: imageUrl}} style={styles.image} />
+        <Image
+          source={{uri: imageUrl}}
+          resizeMode="center"
+          style={styles.image}
+        />
       </View>
 
       <Text style={styles.authorText} numberOfLines={1}>
@@ -40,6 +44,7 @@ const styles = StyleSheet.create({
     borderBottomColor: '#EAEAEA',
     paddingVertical: 18,
     paddingHorizontal: 20,
+    backgroundColor: '#ffffff',
   },
   topRow: {
     flexDirection: 'row',
@@ -57,12 +62,14 @@ const styles = StyleSheet.create({
     height: 78,
     width: 78,
     borderRadius: 14,
+    paddingLeft: 18,
   },
   titleText: {
     fontWeight: '700',
     color: '#000000',
     fontSize: 18,
     lineHeight: 24,
+    flex: 1,
   },
   authorText: {
     fontSize: 12,
