@@ -6,13 +6,8 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  StatusBar,
-  StyleSheet,
-  useColorScheme,
-} from 'react-native';
-
+import {SafeAreaView, StatusBar, useColorScheme} from 'react-native';
+import 'react-native-gesture-handler';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 function App(): React.JSX.Element {
