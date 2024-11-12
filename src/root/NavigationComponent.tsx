@@ -1,3 +1,4 @@
+import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import SplashScreen from '../screens/SplashScreen';
@@ -13,7 +14,7 @@ enum Routes {
 const NavigationComponent = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Splash">
+      <Stack.Navigator initialRouteName={Routes.Splash}>
         <Stack.Screen
           name={Routes.Splash}
           component={SplashScreen}
