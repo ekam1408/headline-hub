@@ -14,12 +14,10 @@ enum Routes {
 const NavigationComponent = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName={Routes.Splash}>
-        <Stack.Screen
-          name={Routes.Splash}
-          component={SplashScreen}
-          options={{headerShown: false}}
-        />
+      <Stack.Navigator
+        initialRouteName={Routes.Home}
+        screenOptions={{headerShown: false}}>
+        <Stack.Screen name={Routes.Splash} component={SplashScreen} />
         <Stack.Screen name={Routes.Home} component={HomeScreen} />
       </Stack.Navigator>
     </NavigationContainer>
